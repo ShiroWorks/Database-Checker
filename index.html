@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Document</title>
+  
+  </head>
+  <body>
+    <div class="container">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6 offset-s3 form-field">
+              
+            <input
+              id="username"
+              name="username"
+              type="text"
+              class="validate check-exists"
+              data-type="username"
+              autocomplete="off"
+            /><span class="check-exists-feedback" data-type="username"
+              ></span
+            >
+            <label for="username">Username</label>
+          </div>
+        </div>
+          <div class="row">
+            <div class="input-field col s6 offset-s3  form-field ">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="validate check-exists"
+                data-type="email"
+                autocomplete="off"
+              /><span class="check-exists-feedback" data-type="email"></span>
+              <label for="email">Email</label>
+            </div>
+          </div>
+        
+        </div>
+         <div class="row">
+           <div class="center-align">
+        <button
+        class="btn waves-effect waves-light"
+        type="submit"
+        name="action">Sign Up</button>
+      </div>
+      </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/existcheck.jquery.js"></script>
+    <script>
+      $('.check-exists').existsChecker();
+    </script>
+  </body>
+</html>
